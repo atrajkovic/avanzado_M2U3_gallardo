@@ -78,7 +78,9 @@ function dragdrop(){
     espacio.addEventListener('dragenter', inicio, false)
     espacio.addEventListener('dragleave', chau, false)
     espacio.addEventListener('dragover', function(e){
-        e.preventDefault(); }, false)
+        e.preventDefault()
+        espacio.style.backgroundColor = '#ffffff'
+        espacio.style.border = '2px solid #0330ad'}, false)
     espacio.addEventListener('drop', recibir, false)
     console.log("dragenter")
 }
